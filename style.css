@@ -116,7 +116,84 @@
     z-index: 101;
   }
 
-  /* Responsive */
+    /* Responsive */
+  @media (min-width: 1440px) {
+    nav {
+        padding: 35px 60px;
+    }
+
+    .page1 {
+        padding: 35px 60px;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+
+    .links {
+        gap: 45px;
+    }
+
+    .links a {
+        font-size: 24px;
+    }
+
+    .maintitle {
+        font-size: 150px;
+        width: 70%;
+        margin-bottom: 25px;
+    }
+
+    .button1 {
+        font-size: 45px;
+        width: 400px;
+        height: 65px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    nav {
+        padding: 45px 80px;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .page1 {
+        padding: 45px 80px;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .links {
+        gap: 60px;
+    }
+
+    .links a {
+        font-size: 28px;
+    }
+
+    .links a::after {
+        height: 4px;
+    }
+
+    .maintitle {
+        font-size: 125px;
+        width: 50%;
+        margin-bottom: 35px;
+    }
+
+    .button1 {
+        font-size: 40px;
+        width: 350px;
+        height: 65px;
+        border: 7px solid white;
+    }
+  }
+
   @media (max-width: 1024px) {
     .maintitle {
         font-size: 90px;

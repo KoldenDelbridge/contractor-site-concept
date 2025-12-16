@@ -80,7 +80,7 @@
 }
   .maintitle {
     font-family: Impact, 'Arial Black', sans-serif;
-    font-size: 125px;
+    font-size: 100px;
     line-height: 1.2;
     width: 75%;
     margin-bottom: 15px;
@@ -116,172 +116,173 @@
     z-index: 101;
   }
 
-    /* Responsive */
-  @media (min-width: 1440px) {
-    nav {
-        padding: 35px 60px;
-    }
-
-    .page1 {
-        padding: 35px 60px;
-    }
-
-    .logo {
-        font-size: 48px;
-    }
-
-    .links {
-        gap: 45px;
-    }
-
-    .links a {
-        font-size: 24px;
-    }
-
-    .maintitle {
-        font-size: 150px;
-        width: 70%;
-        margin-bottom: 25px;
-    }
-
-    .button1 {
-        font-size: 45px;
-        width: 400px;
-        height: 65px;
-    }
+/* Mobile */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 15px;
   }
 
-  @media (min-width: 1920px) {
-    nav {
-        padding: 45px 80px;
-        max-width: 1920px;
-        margin: 0 auto;
-    }
-
-    .page1 {
-        padding: 45px 80px;
-        max-width: 1920px;
-        margin: 0 auto;
-    }
-
-    .logo {
-        font-size: 35px;
-    }
-
-    .links {
-        gap: 60px;
-    }
-
-    .links a {
-        font-size: 28px;
-    }
-
-    .links a::after {
-        height: 4px;
-    }
-
-    .maintitle {
-        font-size: 125px;
-        width: 50%;
-        margin-bottom: 35px;
-    }
-
-    .button1 {
-        font-size: 40px;
-        width: 350px;
-        height: 65px;
-        border: 7px solid white;
-    }
+  .maintitle {
+    font-size: 45px;
   }
-
-  @media (max-width: 1024px) {
-    .maintitle {
-        font-size: 90px;
-    }
-
-    .links a {
-        font-size: 18px;
-        gap: 20px;
-    }
-
-    .button1 {
-        font-size: 35px;
-        width: 300px;
-        height: 50px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    nav {
-        justify-content: center;
-        position: fixed;
-    }
-
-    .logo {
-        font-size: 32px;
-    }
-
-    .page1 {
-        align-items: center;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .maintitle {
-        font-size: 60px;
-        width: 100%;
-    }
-
-    .links {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(31,78,121,0.98);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-        z-index: 99;
-    }
-
-    .links a {
-        font-size: 30px;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 35px;
-    }
-
-    .links.active {
-        transform: translateX(0);
-    }
-
-    .button1 {
-        font-size: 28px;
-        width: 250px;
-        height: 50px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .logo {
-        font-size: 24px;
-    }
-
-    .maintitle {
-        font-size: 45px;
-    }
 
   .button1 {
-      font-size: 24px;
-      width: 200px;
-      height: 45px;
-      border: 4px solid white;
-    }
+    font-size: 24px;
+    width: 200px;
+    height: 45px;
+    border: 5px solid white;
+    border-radius: 10px;
   }
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+  }
+
+  .logo {
+    font-size: 28px;
+    width: 50%
+  }
+
+  .page1 {
+    align-items: center;
+  }
+
+  .maintitle {
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(31,78,121,0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 99;
+  }
+
+  .links a {
+    font-size: 30px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 35px;
+  }
+
+  .links.active {
+    transform: translateX(0);
+  }
+
+  .button1 {
+    font-size: 28px;
+    width: 250px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .maintitle {
+    font-size: 85px;
+  }
+
+  .links a {
+    font-size: 35px;
+    gap: 20px;
+  }
+
+  .button1 {
+    font-size: 30px;
+    width: 250px;
+    height: 50px;
+  }
+}
+
+/* Desktop - Use ranges to prevent overlap */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  nav {
+    padding: 15px 60px;
+  }
+
+  .page1 {
+    padding: 35px 60px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .links {
+    gap: 45px;
+  }
+
+  .links a {
+    font-size: 24px;
+  }
+
+  .maintitle {
+    font-size: 135px;
+    width: 65%;
+    margin-bottom: 25px;
+  }
+
+  .button1 {
+    font-size: 45px;
+    width: 400px;
+    height: 65px;
+  }
+}
+
+@media (min-width: 1920px) {
+  nav {
+    padding: 45px 80px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .page1 {
+    padding: 45px 80px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  .links {
+    gap: 60px;
+  }
+
+  .links a {
+    font-size: 28px;
+  }
+
+  .links a::after {
+    height: 4px;
+  }
+
+  .maintitle {
+    font-size: 100px;
+    width: 50%;
+    margin-bottom: 35px;
+  }
+
+  .button1 {
+    font-size: 40px;
+    width: 350px;
+    height: 65px;
+    border: 7px solid white;
+  }
+}
